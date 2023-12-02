@@ -14,7 +14,7 @@ import { FeatureC_D_E } from "./ClientComponents/FeatureC_D_E";
 });
 export function ProductFeatures() {
   return (
-    <section className="py-24 max-w-[1200px] mx-auto">
+    <section className="py-24 max-w-[1200px] mx-auto w-full">
       <div className="flex flex-col gap-2">
         <div
           className={"w-fit mx-auto text-[#8247ff] font-medium text-sm whitespace-pre bg-white px-2 py-1 rounded-md border-[#8247ff33] border " +

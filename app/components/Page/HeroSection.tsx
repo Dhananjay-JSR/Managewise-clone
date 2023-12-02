@@ -25,15 +25,15 @@ export function HeroSection() {
   const { scrollYProgress } = useScroll({});
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
-  const Value = useTransform(scrollYProgress,[0,1],[1,1.7])
-  const [scaleValue, setScaleValue] = useState(1);
+  const Value = useTransform(scrollYProgress,[0,1],[0.8,1])
+  // const [scaleValue, setScaleValue] = useState(1);
 
-  useMotionValueEvent(scrollYProgress, "change", (latest) => {
-    // console.log(scaleValue);
-    setScaleValue((prev) => 1 + (latest ));
-  });
+  // useMotionValueEvent(scrollYProgress, "change", (latest) => {
+  //   console.log(1 + (latest/20 ));
+  //   setScaleValue((prev) => 1 + (latest/20 ));
+  // });
   return (
-    <section className="pt-24 max-w-5xl mx-auto ">
+    <section className="pt-24 max-w-5xl mx-auto overflow-y-hidden">
       <article className="mb-2">
         <div className="flex flex-col gap-2 mb-8">
           <WelcomeTag />

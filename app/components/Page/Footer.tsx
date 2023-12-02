@@ -85,7 +85,7 @@ function SocialLinks() {
 
 export function Footer() {
   return (
-    <div className="bg-gradient-to-b from-white to-[#fdf2ed]">
+    <div className="bg-gradient-to-b from-white to-[#fdf2ed] overflow-y-hidden">
       <Closing />
       <SocialLinks />
     </div>

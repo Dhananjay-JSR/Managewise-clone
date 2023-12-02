@@ -15,10 +15,10 @@ export default function Home() {
       <ProductFeatures />
       <MoreFeatures />
       <Integrations />
-      <FAQSectiom />
-     <PricingPlan />
+     <FAQSectiom />
+      <PricingPlan />
         <Testimony />
-       <Footer />   
+       <Footer />    
     </>
   );
 }
