@@ -25,7 +25,7 @@ export function HeroSection() {
   const { scrollYProgress } = useScroll({});
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
-  const Value = useTransform(scrollYProgress,[0,1],[0.8,1])
+  const Value = useTransform(scrollYProgress,[0,1],[0.8,1.2])
   // const [scaleValue, setScaleValue] = useState(1);
 
   // useMotionValueEvent(scrollYProgress, "change", (latest) => {
@@ -99,7 +99,7 @@ export function HeroSection() {
           // translateX: "0px",
           rotateX: "0deg",
         }}
-        // viewport={{ once: true }}
+        viewport={{ once: true }}
         style={{
           
           // transform:`perspective(600px) rotateX(0deg)  `,
