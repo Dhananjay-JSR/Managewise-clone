@@ -8,6 +8,16 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      keyframes:{
+        mover:{
+          '0%': { transform: 'translateX(0px)' },
+          '100%': { transform: 'translateX(-100%)' },
+        }
+      },
+
+      animation: {
+        mover: 'mover 40s linear infinite',
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':

@@ -4,6 +4,9 @@ const nextConfig = {
         remotePatterns:[{
             hostname:"framerusercontent.com",
             protocol: 'https',
+        },{
+            hostname:"i.pravatar.cc",
+            protocol:"https"
         }]
     }
 }
