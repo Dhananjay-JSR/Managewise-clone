@@ -14,11 +14,11 @@ const inter = Inter({
 
 function HeroButton() {
   return (
-    <div className="mt-[30px] flex gap-6 mx-auto w-fit ">
+    <div className="mt-[30px] flex flex-col w-full md:flex-row gap-6 mx-auto md:w-fit px-4 md:px-0">
       <button
         className={
           outfir.className +
-          " bg-[#8247ff] relative w-[220px] group justify-center flex rounded-xl text-white font-semibold text-xl px-7 py-3 transition-all  hover:shadow-[0px_0px_0px_10px_#d7c5fc]  "
+          " bg-[#8247ff] w-full relative md:w-[220px] group justify-center flex rounded-xl text-white font-semibold text-xl px-7 py-3 transition-all  hover:shadow-[0px_0px_0px_10px_#d7c5fc]  "
         }
       >
         <div className="text-center group-hover:-translate-x-4 transition-all ease-in-out duration-300 ">
@@ -40,7 +40,7 @@ function HeroButton() {
       <button
         className={
           outfir.className +
-          " flex gap-2 items-center font-semibold text-xl px-7 py-3 bg-white rounded-xl border hover:border-black transition-all hover:transition-all duration-200 hover:duration-500"
+          " flex gap-2 items-center justify-center md:justify-normal font-semibold text-xl px-7 py-3 bg-white rounded-xl border hover:border-black transition-all hover:transition-all duration-200 hover:duration-500"
         }
       >
         Watch Demo
@@ -82,7 +82,7 @@ function HeroSection() {
           <h1
             className={
               outfir.className +
-              " text-[68px] xl:text-[85px] tracking-tight font-medium text-center leading-none"
+              " md:text-[68px] xl:text-[85px] text-[54px] px-4 md:px-0 tracking-tight font-medium text-center leading-none"
             }
           >
             Empower your business with{" "}
@@ -92,7 +92,7 @@ function HeroSection() {
         <div
           className={
             inter.className +
-            " text-[#8d8b8b] max-w-[700px] mx-auto text-center text-[20px]"
+            " text-[#8d8b8b] px-4 md:px-0 mx-4 max-w-[700px] md:mx-auto text-center text-[18px] md:text-[20px]"
           }
         >
           Powerful management platform designed to streamline your business
@@ -100,7 +100,7 @@ function HeroSection() {
         </div>
         <HeroButton />
       </article>
-      <div className="mt-16 mb-24 shadow-xl">
+      <div className="mt-16 mb-24 shadow-xl mx-4 md:mx-0">
         <Image
           src={
             "https://framerusercontent.com/images/t9qCSNfZSNdBCMSiohCGNEIl4.jpg?scale-down-to=2048"
@@ -117,13 +117,13 @@ function HeroSection() {
 
 function FeatureA() {
   return (
-    <div className="bg-[#ededfa] p-5 w-[600px] pt-[76px] pb-[35px] px-[40px] rounded-2xl ">
+    <div className="bg-[#ededfa] p-5  w-full  md:w-[600px] pt-[76px] pb-[35px] px-[40px] rounded-2xl ">
       <div className="flex flex-col gap-2 ">
         <div className="text-2xl bg-white w-fit p-2 rounded-2xl">⭐️</div>
         <div
           className={
             outfir.className +
-            " text-[34px] leading-tight xl:text-[42px] font-medium tracking-tighter"
+            " md:text-[34px] text-[27px] leading-tight xl:text-[42px] font-medium tracking-tighter"
           }
         >
           Boost productivity and streamline workflow with us. Enjoy our
@@ -167,7 +167,7 @@ function FeatureC_D_E({
   Subline: string;
 }) {
   return (
-    <div className="rounded-2xl border flex justify-between flex-col w-[600px]">
+    <div className="rounded-2xl border flex justify-between flex-col w-full md:w-[600px]">
       <Image
         src={ImageURL}
         className="w-full"
@@ -200,7 +200,7 @@ function ProductFeatures() {
         </div>
         <div
           className={
-            "text-[45px] 2xl:text-[56px] text-center font-medium " +
+            "md:text-[45px] leading-none 2xl:text-[56px] text-[36px] text-center font-medium " +
             outfir.className
           }
         >
@@ -209,7 +209,7 @@ function ProductFeatures() {
         </div>
         <div
           className={
-            "max-w-[650px] text-[20px] text-[#767575] font-medium text-center mx-auto " +
+            "max-w-[650px] md:text-[20px] text-[18px] px-4 md:px-0 text-[#767575] font-medium text-center mx-auto " +
             inter.className
           }
         >
@@ -218,11 +218,11 @@ function ProductFeatures() {
         </div>
       </div>
       <div className="mx-auto mt-[60px]">
-        <div className="flex gap-11 2xl:flex-row flex-col items-center mb-10 2xl:items-stretch">
+        <div className="flex gap-11 2xl:flex-row px-4 lg:px-0 flex-col items-center mb-10 2xl:items-stretch">
           <FeatureA />
           <FeatureB />
         </div>
-        <div className="flex gap-10 2xl:flex-row flex-col items-center mb-10 2xl:items-stretch">
+        <div className="flex px-4 lg:px-0 gap-10 2xl:flex-row flex-col items-center mb-10 2xl:items-stretch">
           <FeatureC_D_E
             ImageURL="https://framerusercontent.com/images/LFrHT3kBfxtMGAZfWkyLvYAKsbg.png?scale-down-to=1024"
             Headline="Flexible Scheduling"
@@ -281,7 +281,7 @@ function XtraFeat({
 function MoreFeatures() {
   return (
     <div className="bg-[#1c1c1c] py-[120px] ">
-      <section className="2xl:max-w-[1200px] max-w-[1050px] mx-auto">
+      <section className="2xl:max-w-[1200px] max-w-[1050px] mx-5  lg:mx-auto">
         <div className="flex flex-col gap-4">
           <div
             className={
@@ -303,7 +303,7 @@ function MoreFeatures() {
           </div>
           <div
             className={
-              "text-[#767575] text-[20px] w-[550px] font-medium " +
+              "text-[#767575] md:text-[20px] text-[18px]  md:w-[550px] font-medium " +
               inter.className
             }
           >
@@ -379,7 +379,7 @@ function Integrations() {
         <div className="mx-auto w-fit mt-3">
           <h2
             className={
-              "text-[#fdf2ec] text-[45px] 2xl:text-[56px] w-[600px] font-medium leading-none text-center " +
+              "text-[#fdf2ec] text-[36px] md:text-[45px] 2xl:text-[56px] w-full px-3 md:px-0 md:w-[600px] font-medium leading-none text-center " +
               outfir.className
             }
           >
@@ -389,7 +389,7 @@ function Integrations() {
         </div>
         <div
           className={
-            "text-[#767575] text-[20px] font-medium w-[450px] mx-auto mt-5 text-center " +
+            "text-[#767575] text-[18px] md:text-[20px] font-medium w-full px-3 md:px-0 md:w-[450px] mx-auto mt-5 text-center " +
             inter.className
           }
         >
@@ -403,7 +403,7 @@ function Integrations() {
           alt="Image Alt"
           width={580}
           height={273}
-          className="mt-12 mx-auto"
+          className="mt-12 mx-auto px-8 md:px-0"
         />
       </section>
     </div>
@@ -414,10 +414,10 @@ function FAQSectiom() {
   return (
     <section>
       <div className="2xl:max-w-[1200px] max-w-[1050px] mx-auto pt-[150px] pb-[120px] flex flex-col 2xl:flex-row">
-        <div className="w-1/3">
+        <div className="md:w-1/3 w-full px-5 lg:px-0">
           <div
             className={
-              "w-fit  text-[#8247ff] font-medium text-sm whitespace-pre bg-white px-2 py-1 rounded-md border-[#8247ff33] border " +
+              "w-fit mx-auto md:mx-0 text-[#8247ff] font-medium text-sm whitespace-pre bg-white px-2 py-1 rounded-md border-[#8247ff33] border " +
               outfir.className
             }
           >
@@ -426,7 +426,7 @@ function FAQSectiom() {
           </div>
           <div
             className={
-              "w-[400px] mt-4 text-[45px] 2xl:text-[56px] leading-none font-medium " +
+              "lg:w-[400px] text-center md:text-left text-[36px] mt-4 md:text-[45px] 2xl:text-[56px] leading-none font-medium " +
               outfir.className
             }
           >
@@ -435,7 +435,7 @@ function FAQSectiom() {
           </div>
           <div
             className={
-              "text-[#767575] 2xl:w-[325px] w-[550px] mt-4 text-[20px] tracking-tighter font-medium " +
+              "text-[#767575] text-[18px] 2xl:w-[325px] md:w-[550px] w-full mt-4 md:text-[20px] px-4 md:px-0 text-center md:text-left tracking-tighter font-medium " +
               inter.className
             }
           >
@@ -443,7 +443,7 @@ function FAQSectiom() {
             information you need.
           </div>
         </div>
-        <div className="2xl:w-2/3 w-full mt-7 2xl:mt-0 space-y-4">
+        <div className="2xl:w-2/3 w-full mt-7 2xl:mt-0 space-y-4 px-2 md:px-0">
           <ClientComponnet />
         </div>
       </div>
@@ -573,7 +573,7 @@ function PricingPlan() {
       </div>
       <div
         className={
-          "text-[45px] 2xl:text-[56px] font-medium text-center " +
+          " text-[36px] mx-3 md:mx-0 md:text-[45px] 2xl:text-[56px] font-medium text-center " +
           outfir.className
         }
       >
@@ -581,14 +581,14 @@ function PricingPlan() {
       </div>
       <div
         className={
-          "w-[500px] text-[20px] font-medium text-[#767575] text-center mx-auto " +
+          "md:w-[500px] w-full text-[18px] md:text-[20px] font-medium text-[#767575] text-center mx-auto " +
           inter.className
         }
       >
         At Manage Wise, we believe in providing you with pricing plans that
         adapt to your unique needs.
       </div>
-      <div className="mt-[40px] flex flex-col 2xl:flex-row gap-6 2xl:items-end items-center">
+      <div className="mt-[40px] flex flex-col 2xl:flex-row gap-6 2xl:items-end items-center px-4 md:px-0">
         <PricingVar1 plan="FREE" price="0" />
         <PricingVar2 />
         <PricingVar1 plan="BUSINESS" price="42" />
@@ -599,7 +599,7 @@ function PricingPlan() {
 
 function Testimony() {
   return (
-    <section className="2xl:max-w-[1200px] max-w-[1050px] mx-auto py-[100px]">
+    <section className="2xl:max-w-[1200px] max-w-[1050px] mx-auto py-[100px] px-4 md:px-0">
       <div
         className={
           "w-fit   text-[#8247ff] font-medium text-sm whitespace-pre bg-white px-2 py-1 rounded-md border-[#8247ff33] border " +
@@ -611,14 +611,14 @@ function Testimony() {
       </div>
       <div
         className={
-          "text-[45px] 2xl:text-[56px] font-medium " + outfir.className
+          " text-[36px] md:text-[45px] 2xl:text-[56px] font-medium " + outfir.className
         }
       >
         Hear from our <span className="text-[#fe8162]">Satisfied</span> clients
       </div>
       <div
         className={
-          "w-[550px] text-[#767575] font-medium text-[20px] " + inter.className
+          " md:w-[550px] text-[#767575] text-[18px] font-medium md:text-[20px] " + inter.className
         }
       >
         Discover why our clients love working with us. Read their testimonials
@@ -702,11 +702,11 @@ function HappyCustomerContainer() {
 
 function Closing() {
   return (
-    <div className=" flex justify-center flex-col 2xl:flex-row py-[100px] px-[30px] max-w-[1000px] 2xl:max-w-[1200px] mx-10 rounded-2xl border lg:mx-auto bg-white">
+    <div className=" flex justify-center flex-col 2xl:flex-row py-[100px] md:px-[30px] max-w-[1000px] 2xl:max-w-[1200px] mx-10 rounded-2xl border lg:mx-auto bg-white">
       <div className="w-fit mx-auto">
         <div
           className={
-            "w-fit 2xl:mx-0 mx-auto  text-[#8247ff] font-medium text-sm whitespace-pre bg-white px-2 py-1 rounded-md border-[#8247ff33] border " +
+            "w-fit 2xl:mx-0 mx-auto  text-[#8247ff] font-semibold text-sm whitespace-pre bg-white px-2 py-1 rounded-md border-[#8247ff33] border " +
             outfir.className
           }
         >
@@ -716,7 +716,7 @@ function Closing() {
         </div>
         <h5
           className={
-            "text-[45px] 2xl:text-[56px] font-medium 2xl:w-[500px] leading-none mt-6 " +
+            "md:text-[45px] text-center md:text-left text-[36px] 2xl:text-[56px] font-medium 2xl:w-[500px] leading-none mt-6 " +
             outfir.className
           }
         >
@@ -724,7 +724,7 @@ function Closing() {
         </h5>
         <div
           className={
-            "text-[#767575] text-[20px] font-medium 2xl:w-[350px] w-[600px] text-center 2xl:text-left mt-6 " +
+            "text-[#767575] px-5 md:px-0 md:text-[20px] text-[18px] font-medium 2xl:w-[350px] md:w-[600px] text-center 2xl:text-left mt-6 " +
             inter.className
           }
         >
@@ -757,9 +757,9 @@ function Closing() {
         </div>
       </div>
       <div className="w-fit  grid place-content-center 2xl:mt-0 mt-24 mx-auto 2xl:mx-0">
-        <div className="space-y-12">
+        <div className="space-y-12 ">
           <HappyCustomerContainer />
-          <div className="relative w-fit mx-auto">
+          <div className="relative w-fit  mx-auto">
             <Image
               className="absolute"
               src={
@@ -800,7 +800,7 @@ function LinksItems({ children }: { children: React.ReactNode }) {
 function SocialLinks() {
   return (
     <section className="mt-[80px]  pb-[40px] max-w-[1000px] 2xl:max-w-[1200px] mx-auto flex flex-col gap-20">
-      <div className="flex items-baseline justify-between">
+      <div className="flex flex-col md:flex-row px-5 lg:px-0  md:items-baseline gap-9 md:gap-0 items-center md:justify-between">
         <Image
           src={
             "https://framerusercontent.com/images/tgELERqZ0nObn14bTi418qTbg.png?scale-down-to=512"
@@ -810,15 +810,17 @@ function SocialLinks() {
           width={400}
           height={100}
         />
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col items-center md:items-start gap-2">
           <LinksItems>Features</LinksItems>
           <LinksItems>FAQ</LinksItems>
           <LinksItems>Pricing</LinksItems>
           <LinksItems>Testimonials</LinksItems>
         </div>
       </div>
-      <div className="pt-10 border-t flex justify-between">
-        <div className={"font-medium w-fit text-[16px] "+inter.className}>© 2022 ManageWise, Inc.</div>
+      <div className="pt-10 border-t flex flex-col md:flex-row px-5 lg:px-0 items-center md:items-start gap-5 md:gap-0 justify-between">
+        <div className={"font-medium w-fit text-[16px] " + inter.className}>
+          © 2022 ManageWise, Inc.
+        </div>
         <div className="flex gap-3 ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -874,10 +876,10 @@ export default function Home() {
       <ProductFeatures />
       <MoreFeatures />
       <Integrations />
-      <FAQSectiom />
-      <PricingPlan />
-      <Testimony />
-      <Footer />
+       <FAQSectiom />
+    <PricingPlan />
+       <Testimony />
+      <Footer /> 
     </>
   );
 }
