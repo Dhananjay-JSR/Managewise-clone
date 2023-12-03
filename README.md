@@ -1,3 +1,12 @@
+https://managewise.framer.website/ Clone
+
+https://github.com/Dhananjay-JSR/Managewise-clone/assets/47073516/55eae19f-17ac-4536-93b2-bc09079e3084
+
+
+
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -13,6 +22,7 @@ pnpm dev
 # or
 bun dev
 ```
+
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
